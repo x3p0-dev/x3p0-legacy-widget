@@ -11,7 +11,9 @@
 namespace X3P0\LegacyWidget;
 
 /**
- * Mini container.  This allows us to set up single instances of our objects
+ * Mini container.
+ *
+ * This allows us to set up single instances of our objects
  * without using the singleton pattern and gives third-party devs easy access to
  * the objects if they need to unhook actions/filters added by the classes.
  *
@@ -19,11 +21,12 @@ namespace X3P0\LegacyWidget;
  */
 function plugin( string $abstract = '' ): mixed
 {
-        static $bindings = null;
+	/** @var array<string, \X3P0\LegacyWidget\Plugins> $bindings */
+	static $bindings = [];
 
-	if ( is_null( $bindings ) ) {
+	if ( [] === $bindings ) ) {
 		$bindings = [
-			'plugin' => new Plugin()
+			'plugin' => new Plugin(),
 		];
 
 		foreach ( $bindings as $binding ) {
@@ -31,5 +34,5 @@ function plugin( string $abstract = '' ): mixed
 		}
 	}
 
-	return $abstract ? $bindings[ $abstract ] : $bindings;
+	return $abstract === '' ? $bindings : $bindings[ $abstract ];
 }
