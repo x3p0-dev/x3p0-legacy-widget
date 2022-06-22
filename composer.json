@@ -1,0 +1,31 @@
+{
+	"name"        : "x3p0-dev/x3p0-legacy-widget",
+	"description" : "Enables the Legacy Widget block.",
+	"keywords"    : [ "wordpress" ],
+	"homepage"    : "https://github.com/x3p0-dev/x3p0-legacy-widget",
+	"license"     : "GPL-2.0-or-later",
+	"authors"     : [
+		{
+			"name"     : "Justin Tadlock",
+			"email"    : "justintadlock@gmail.com",
+			"homepage" : "http://justintadlock.com",
+			"role"     : "Developer"
+		}
+	],
+	"support"     : {
+		"issues" : "https://github.com/x3p0-dev/x3p0-legacy-widget/issues"
+	},
+	"autoload"    : {
+		"psr-4" : {
+			"X3P0\\LegacyWidget\\" : "src/"
+		},
+		"files" : [
+			"src/functions-helpers.php"
+		]
+	},
+	"require"     : {
+                "php" : ">=8.0"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
