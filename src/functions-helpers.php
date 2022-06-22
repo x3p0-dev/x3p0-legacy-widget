@@ -23,7 +23,10 @@ function plugin( string $abstract = '' ): mixed
 
 	if ( is_null( $bindings ) ) {
 		$bindings = [
-			'plugin' => new Plugin()
+			'plugin' => new Plugin(
+				untrailingslashit( __DIR__ . '/..' ),
+				untrailingslashit( plugins_url( '/..', __FILE__ ) )
+			)
 		];
 
 		foreach ( $bindings as $binding ) {
