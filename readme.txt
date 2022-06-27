@@ -1,7 +1,6 @@
 === X3P0 Legacy Widget ===
 
 Contributors: greenshady
-Donate link: https://themehybrid.com/donate
 Tags: widgets, blocks, block
 Requires at least: 6.0
 Tested up to: 6.0
