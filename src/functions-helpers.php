@@ -16,8 +16,9 @@ namespace X3P0\LegacyWidget;
  * the objects if they need to unhook actions/filters added by the classes.
  *
  * @since 1.0.0
+ * @return mixed
  */
-function plugin( string $abstract = '' ): mixed
+function plugin( string $abstract = '' )
 {
         static $bindings = null;
 

@@ -5,7 +5,7 @@
  * Description:       Enables the Legacy Widget block.
  * Version:           1.0.0-beta-202206221543
  * Requires at least: 6.0
- * Requires PHP:      8.0
+ * Requires PHP:      7.4
  * Author:            Justin Tadlock
  * Author URI:        https://x3p0.com
  * Text Domain:       x3p0-legacy-widget

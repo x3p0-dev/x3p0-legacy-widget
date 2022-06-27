@@ -15,11 +15,31 @@ namespace X3P0\LegacyWidget;
 class Plugin
 {
 	/**
+	 * Plugin directory path.
+	 *
+	 * @since 1.0.0
+	 * @todo  Move this to the constructor with PHP 8 support.
+	 */
+	protected string $path;
+
+	/**
+	 * Plugin directory URI.
+	 *
+	 * @since 1.0.0
+	 * @todo  Move this to the constructor with PHP 8 support.
+	 */
+	protected string $url;
+
+	/**
 	 * Sets up the object properties.
 	 *
 	 * @since 1.0.0
 	 */
-	public function __construct( protected string $path, protected string $uri ) {}
+	public function __construct( string $path, string $url )
+	{
+		$this->path = $path;
+		$this->url  = $url;
+	}
 
         /**
          * Boots the component, running its actions/filters.
@@ -49,7 +69,7 @@ class Plugin
 		// Editor stylesheet.
 		wp_enqueue_style(
 			'x3p0-legacy-widget-editor',
-			$this->uri . '/public/css/editor.css',
+			$this->url . '/public/css/editor.css',
 			[],
 			filemtime( $this->path . '/public/css/editor.css' )
 	        );
@@ -63,7 +83,7 @@ class Plugin
 	public function addEditorStyles(): void
 	{
 		add_editor_style( [
-			$this->uri . '/public/css/style.css'
+			$this->url . '/public/css/style.css'
 		] );
 	}
 
