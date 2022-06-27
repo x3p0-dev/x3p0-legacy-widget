@@ -20,9 +20,9 @@ namespace X3P0\LegacyWidget;
  */
 function plugin( string $abstract = '' )
 {
-        static $bindings = null;
+        static $bindings = [];
 
-	if ( is_null( $bindings ) ) {
+	if ( [] === $bindings ) {
 		$bindings = [
 			'plugin' => new Plugin(
 				untrailingslashit( __DIR__ . '/..' ),
@@ -35,5 +35,5 @@ function plugin( string $abstract = '' )
 		}
 	}
 
-	return $abstract ? $bindings[ $abstract ] : $bindings;
+	return '' === $abstract ? $bindings : $bindings[ $abstract ];
 }
