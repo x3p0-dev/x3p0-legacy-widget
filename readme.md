@@ -4,11 +4,9 @@ X3PO Legacy Widget enables the Legacy Widget block in WordPress for all block ed
 
 **Note #1:** The Legacy Widget block is a core WordPress (Gutenberg) block and not created by this plugin. For known issues or tickets related to the block itself, see the [Legacy Widget label](https://github.com/WordPress/gutenberg/labels/%5BBlock%5D%20Legacy%20Widget) in the Gutenberg project repository.
 
-**Note #2:** Widget options do not appear when used with the post/page editor.  However, widget options are available via the site editor (i.e., Appearance > Editor).
+**Note #2:** Widget options do not appear when used with the post/page editor.  However, widget options are available via the site editor (i.e., Appearance > Editor).  When used in a post/page, this means that users are stuck with whatever the widget's default options are.
 
-**Note #3:** The widget design in the editor may not look great.  Right now, this plugin is a proof-of-concept project.
-
-**Note #4:** Not all third-party widgets from plugins/themes will work in the editor.  This is more likely an issue with those that use custom JavaScript.  Please encourage plugin authors to migrate their plugins to custom block types.
+**Note #3:** Not all third-party widgets from plugins/themes will work in the editor.  This is more likely an issue with those that use custom JavaScript.  Please encourage plugin authors to migrate their plugins to custom block types.
 
 ## Copyright and License
 
