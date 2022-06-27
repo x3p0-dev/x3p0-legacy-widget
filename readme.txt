@@ -1,4 +1,4 @@
-=== X3P0 Legacy Widget ===
+=== Legacy Widget Block ===
 
 Contributors: greenshady
 Tags: widgets, blocks, block
