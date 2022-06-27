@@ -10,6 +10,8 @@
  * Author URI:        https://x3p0.com
  * Text Domain:       x3p0-legacy-widget
  * Domain Path:       /public/lang
+ * License:           GPLv2 or later
+ * License URI:       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 namespace X3P0\LegacyWidget;

@@ -1,8 +1,8 @@
 <?php
 /**
- * Block class.
+ * Plugin class.
  *
- * Registers and renders the block type on the front end.
+ * Sets up and enables the Legacy Widget block.
  *
  * @author    Justin Tadlock <justintadlock@gmail.com>
  * @copyright Copyright (c) 2022, Justin Tadlock
