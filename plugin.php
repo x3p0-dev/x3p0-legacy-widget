@@ -3,7 +3,7 @@
  * Plugin Name:       X3P0 - Legacy Widget
  * Plugin URI:        https://github.com/x3p0-dev/x3p0-legacy-widget
  * Description:       Enables the Legacy Widget block.
- * Version:           1.0.0-beta-202206271054
+ * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Justin Tadlock

@@ -1,4 +1,4 @@
-=== Legacy Widget Block ===
+=== X3P0 Legacy Widget ===
 
 Contributors: greenshady
 Tags: widgets, blocks, block
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.htm
 
 Enables the WordPress Legacy Widget block for block-based themes.
 
-== Description ==
+## Description
 
 X3P0 Legacy Widget enables the core WordPress Legacy Widget block for the WordPress block editor.  It is meant to be used alongside a block-based theme, such as Twenty Twenty-Two, so that users can embed classic widgets into their sites via the site editor (Appearance > Editor).
 
@@ -23,20 +23,24 @@ This plugin is mostly useful when working with third-party plugins that register
 
 **Note #3:** Not all third-party widgets from plugins/themes will work in the editor.  This is more likely an issue with those that use custom JavaScript.  Please encourage plugin authors to migrate their plugins to custom block types.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions
 
-=== Do I need this plugin? ===
+### Why is the Legacy Widget not enabled in WordPress by default?
 
-The primary use case for this plugin is to use alongside other plugins that register widgets.  If the plugin author has yet to build a block equivalent of that widget, you will need this plugin to use that widget alongside a block-based theme.
+Technically, it is enabled for the block-based widgets screen for classic themes, but it is not enabled for other editors.  Originally, the Gutenberg plugin shipped it for the post editor.  However, contributors [decided to disable it](https://github.com/WordPress/gutenberg/issues/24900) before it was ported to WordPress.  There is a performance hit when loading all of the widget-related features for everyone, especially for those who don't need widgets.  Also, the goal is to get plugin authors to move forward with blocks, phasing out widgets.
 
-=== Can this be used with a classic theme? ===
+### Do I need this plugin?
+
+The primary use case for this plugin is to use alongside other plugins that register widgets.  If the plugin author has yet to build a block equivalent of that widget, you will need this plugin only in the case that you have installed and activated a block theme.
+
+### Can this be used with a classic theme?
 
 There should be no reason to use it with classic themes.  They already support classic widgets.
 
-=== The experience feels a bit janky. Can you make it better? ===
+### The experience feels a bit janky. Can you make it better?
 
 I am certainly open to feedback on improving the plugin.  However, the "core" code for the Legacy Widget block is actually in WordPress itself.  This limits what I am able to do with it.  Essentially, the plugin enables the existing Legacy Widget block in WordPress and adds some custom CSS to make it look a little better in the editor.  Outside of additional CSS changes, it's unlikely I can do much else.  Most bug fixes will need to happen in WordPress itself.
 
-== Changelog ==
+## Changelog
 
 Please see the `changelog.md` file included with the plugin file.  Or, you can view the [online change log](https://github.com/x3p0-dev/x3p0-legacy-widget/blob/master/changelog.md).
