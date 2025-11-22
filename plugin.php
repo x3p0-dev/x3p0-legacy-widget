@@ -24,7 +24,7 @@ namespace X3P0\LegacyWidget;
 # the file exists in case someone's using Composer to load their dependencies in
 # a different directory.
 
-if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+if ( ! class_exists( Plugin::class ) && is_file( __DIR__ . '/vendor/autoload.php' ) ) {
 	require_once __DIR__ . '/vendor/autoload.php';
 }
 
@@ -34,4 +34,4 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 #
 # Just runs a small bootstrapping routine.
 
-plugin();
+\add_action( 'plugins_loaded', __NAMESPACE__ . '\\plugin' );
